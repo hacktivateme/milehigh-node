@@ -4,7 +4,7 @@ A simple node.js skeleton for connecting to [Hacktivate](http://hacktivate.me)'s
 
 ## Setup
 
-The stock standard - clone this repo, run `npmm install` and away you go.
+The stock standard - clone this repo, run `npm install` and away you go. Only a couple dependencies in this bad boy so shouldn't be too taxing.
 
 ## Running the app
 
