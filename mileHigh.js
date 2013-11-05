@@ -1,3 +1,42 @@
+/*
+
+77777777777777777777777777777777
+77777777777777777777777777777777
+777777     7777777777     777777
+777777     7777777777     777777
+777777     7777777777     777777
+777777     7777777777     777777
+777777     7777777777     777777
+77777777777777777777777777777777
+777                          777
+777                          777
+777                          777
+777                          777
+777                          777
+777                          777
+777      77777777   7777777  777
+777      77777777   7777777  777
+777      77777777   7777777  777
+777      77777777   7777777  777
+777                          777
+777                          777
+777        777777777777777777777
+777         77777777777777777777
+777                          777
+777                          777
+77777777777777777777777777777777
+77777777777777777777777777777777
+
+Hacktivate MILE HIGH
+mileHigh.js
+by @samhogg - http://www.samhogg.com
+
+RELEASED UNDER MIT LICENSE.
+
+Have fun ;)
+
+*/
+
 var CONNECTION_URL = "http://challenge.hacktivate.me:3000",
     request = require('request'),
     async = require('async'),
@@ -22,10 +61,8 @@ var mileHigh = function(token) {
                 request.post(CONNECTION_URL +"/post", {json: postData});
 
               } else {
-
                 // Ooopsie
                 console.log("ERROR: " + error);
-
               }
             });
 
@@ -40,11 +77,13 @@ var mileHigh = function(token) {
     );
 }
 
-
 var initialiseMileHigh = function() {
 
-    // If we give mileHigh a token, it will connect to that
+    // If we give mileHigh a token, it will connect to that. 
+    // If you give it a malformed token, it will probably die. 
+    // And when I say probably, it will die. Watch out for that one.
     if(process.argv[2]) {
+        
         //Mac OS Specific. Feel free to remove if not helpful for you :)
         spawn('open', [CONNECTION_URL + "/view3d?token=" + process.argv[2]]);
         mileHigh(process.argv[2]);
@@ -65,6 +104,5 @@ var initialiseMileHigh = function() {
         });
     }
 };
-
 
 var mileHighInstance = new initialiseMileHigh();
