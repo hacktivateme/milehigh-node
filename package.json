@@ -1,0 +1,24 @@
+{
+  "name": "milehigh-node",
+  "version": "0.0.0",
+  "description": "Boilerplate code for ",
+  "main": "main.js",
+  "dependencies": {
+    "request": "~2.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/hacktivateme/milehigh-node/"
+  },
+  "keywords": [
+    "hacktivate",
+    "milehigh",
+    "hackathon"
+  ],
+  "author": "Sam Hogg/Hacktivate",
+  "license": "MIT"
+}
