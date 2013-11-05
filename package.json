@@ -4,7 +4,8 @@
   "description": "Boilerplate code for ",
   "main": "main.js",
   "dependencies": {
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "async": "~0.2.9"
   },
   "devDependencies": {},
   "scripts": {
