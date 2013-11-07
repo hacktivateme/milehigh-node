@@ -96,7 +96,7 @@ var initialiseMileHigh = function() {
             var token = JSON.parse(body).token;
 
             //Mac OS Specific. Feel free to remove if not helpful for you :)
-            spawn('open', [CONNECTION_URL + "/view3d?token=" +token]);
+            spawn('open', [CONNECTION_URL + "/view?token=" +token]);
             mileHigh(token);
           } else {
             console.log("ERROR: " + error);
